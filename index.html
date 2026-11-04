@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>A. Izzat Shafran Ashari — Lorem Ipsum</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+  <meta name="theme-color" content="#0c0c0b" />
+  <meta property="og:title" content="A. Izzat Shafran Ashari — Lorem Ipsum" />
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+  <!-- EDIT: once the site is online, change to the full URL, e.g. https://your-domain.com/assets/images/og.png -->
+  <meta property="og:image" content="assets/images/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0c0b'/%3E%3Ctext x='16' y='23' font-family='serif' font-style='italic' font-size='20' text-anchor='middle' fill='%23ece8df'%3Ei%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Person", "name": "A. Izzat Shafran Ashari",
+    "jobTitle": "Lorem Ipsum", "address": { "@type": "PostalAddress", "addressLocality": "Dolor", "addressCountry": "ID" },
+    "alumniOf": "Lorem Ipsum" }
+  </script>
+</head>
+<body class="is-loading">
+  <div class="loader" id="loader" aria-hidden="true">
+    <span class="loader__name">Izzat</span>
+    <span class="loader__count"><span id="loaderCount">0</span>%</span>
+  </div>
+
+  <header class="bar">
+    <a class="bar__brand" href="#top">Izzat<sup>©</sup></a>
+    <span class="bar__clock mono"><span id="clock">--:--</span> Lorem</span>
+    <div class="bar__right">
+      <a class="btn btn--pill" id="ctaMail" href="#contact">Lorem ipsum</a>
+      <button class="btn bar__menu" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="bar__menu-label" data-open="Menu" data-close="Close">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="index mono" id="index" aria-label="Sections"></nav>
+
+  <div class="menu-layer" id="menuLayer" aria-hidden="true" hidden></div>
+  <nav class="menu" id="menu" aria-label="Main" hidden>
+    <div class="menu__preview" id="menuPreview" aria-hidden="true"><div class="menu__preview-img" id="menuPreviewImg"></div></div>
+    <ol class="menu__list">
+      <li><a href="#top"><span class="mono">01</span>Home</a></li>
+      <li><a href="#about"><span class="mono">02</span>About</a></li>
+      <li><a href="#work"><span class="mono">03</span>Work</a></li>
+      <li><a href="#posters"><span class="mono">04</span>Posters</a></li>
+      <li><a href="#awards"><span class="mono">05</span>Awards</a></li>
+      <li><a href="#contact"><span class="mono">06</span>Contact</a></li>
+    </ol>
+    <div class="menu__foot mono" id="menuLinks"></div>
+  </nav>
+
+  <main id="top">
+    <!-- Home -->
+    <section class="hero" data-bg="#0c0c0b" data-fg="#ece8df" data-label="Home">
+      <div class="ambient ambient--hero" aria-hidden="true">
+        <div class="ambient__field">
+          <span class="blob blob--a"></span><span class="blob blob--b"></span>
+          <span class="blob blob--c"></span><span class="blob blob--d"></span>
+          <span class="ambient__mark">iz</span>
+        </div>
+        <canvas class="hero__gl" id="heroGL"></canvas>
+        <div class="ambient__grain"></div>
+      </div>
+      <p class="hero__eyebrow mono"><span id="role"></span> — <span id="loc"></span></p>
+      <h1 class="hero__title" id="heroTitle"></h1>
+      <div class="hero__foot">
+        <p class="hero__lead">Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em>.</p>
+        <a class="hero__scroll mono" href="#about">Scroll ↓</a>
+      </div>
+    </section>
+
+    <!-- About: blur-focus list -->
+    <section class="focus" id="about" data-bg="#b8432c" data-fg="#f6efe4" data-label="About">
+      <div class="focus__side">
+        <span class="mono">(01) Lorem ipsum</span>
+        <p class="focus__lead" id="intro"></p>
+      </div>
+      <ul class="focus__list" id="focusList"></ul>
+    </section>
+
+    <!-- Work: pinned showcase (desktop) + grid (mobile / reduced motion) -->
+    <section class="work-sec" id="work" data-bg="#efeadf" data-fg="#0c0c0b" data-label="Work">
+      <div class="showcase" id="showcase">
+        <span class="showcase__tag mono">(02) Lorem ipsum</span>
+        <div class="showcase__num" id="scNum" aria-hidden="true"></div>
+        <div class="showcase__titles" id="scTitles"></div>
+        <div class="showcase__frame" id="scFrame" data-cursor="View"></div>
+        <div class="showcase__metas" id="scMetas"></div>
+        <ol class="showcase__rail" id="scRail" aria-label="Projects"></ol>
+        <span class="showcase__count mono" id="scCount"></span>
+        <span class="showcase__hint mono">Keep scrolling</span>
+      </div>
+      <div class="section works-grid">
+        <header class="section__head"><span class="mono">(02)</span><span class="mono">Lorem ipsum</span><span class="mono" id="workCount"></span></header>
+        <div class="works" id="works"></div>
+      </div>
+    </section>
+
+    <!-- Posters: staggered grid -->
+    <section class="section posters" id="posters" data-bg="#161513" data-fg="#ece8df" data-label="Posters">
+      <header class="section__head"><span class="mono">(03)</span><span class="mono">Posters</span><span class="mono" id="posterCount"></span></header>
+      <h2 class="posters__title">Lorem<br /><em>ipsum</em></h2>
+      <div class="posters__grid" id="posterGrid"></div>
+    </section>
+
+    <!-- Record: counting numbers -->
+    <section class="section counts" id="record" data-bg="#14204a" data-fg="#ece8df" data-label="Record">
+      <header class="section__head"><span class="mono">(04)</span><span class="mono">Record</span></header>
+      <div class="counts__list" id="recordList"></div>
+    </section>
+
+    <!-- Toolkit: scroll wheel -->
+    <section class="wheel" id="toolkit" data-bg="#22382c" data-fg="#ece8df" data-label="Toolkit">
+      <div class="ambient ambient--soft" aria-hidden="true">
+        <div class="ambient__field"><span class="blob blob--e"></span><span class="blob blob--f"></span></div>
+      </div>
+      <div class="wheel__ring" id="wheel"></div>
+      <div class="wheel__side">
+        <span class="mono">(05) Toolkit</span>
+        <p>Lorem ipsum dolor sit amet — consectetur adipiscing elit sed do.</p>
+      </div>
+    </section>
+
+    <!-- Awards: hover list -->
+    <section class="section awards" id="awards" data-bg="#e9e4d8" data-fg="#0c0c0b" data-label="Awards">
+      <header class="section__head"><span class="mono">(06)</span><span class="mono">Awards</span><span class="mono" id="awardCount"></span></header>
+      <h2 class="awards__title">Lorem ipsum<br /><em>dolor sit amet</em></h2>
+      <ol class="awards__list" id="awardList"></ol>
+      <div class="awards__preview" id="awardPreview" aria-hidden="true"><div class="awards__preview-img" id="awardPreviewImg"></div></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" data-bg="#0f1311" data-fg="#ece8df" data-label="Contact">
+      <div class="ambient ambient--soft" aria-hidden="true">
+        <div class="ambient__field"><span class="blob blob--g"></span><span class="blob blob--h"></span><span class="ambient__mark ambient__mark--sm">iz</span></div>
+      </div>
+      <header class="section__head"><span class="mono">(07)</span><span class="mono">Contact</span></header>
+      <h2 class="contact__title">Lorem ipsum?<br />Dolor sit<br /><em class="contact__cycle" id="cycle">bold</em>.</h2>
+      <div class="contact__grid">
+        <div>
+          <p class="contact__kicker mono">Lorem ipsum</p>
+          <a class="contact__mail" id="mail" href="#"></a>
+        </div>
+        <ul class="contact__links" id="links"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" data-bg="#0f1311" data-fg="#ece8df">
+    <div class="foot__row mono">
+      <span>© <span id="year"></span> A. Izzat Shafran Ashari</span>
+      <span>Lorem, Ipsum</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="cursor" aria-hidden="true"><span id="cursorLabel">View</span></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/hero-bg.js"></script>  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#c9b28a"/>
+  <circle cx="360" cy="380" r="204" fill="none" stroke="#14204a" stroke-width="10"/>
+  <rect x="60" y="60" width="680" height="880" fill="none" stroke="#14204a" stroke-width="2" opacity=".4"/>
+  <text x="60" y="900" font-family="Arial, sans-serif" font-weight="700" font-size="150" letter-spacing="-8" fill="#14204a">08</text>
+  <text x="740" y="110" text-anchor="end" font-family="monospace" font-size="22" fill="#14204a">POSTER — PLACEHOLDER</text>
+</svg>
